@@ -21,5 +21,5 @@ Em resources/application.yml:<br>
 
 ## Autores
 
-- [@Emanuel Castro](https://www.github.com/emanuelsmcastro)
-
+- [@Emanuel Castro](https://www.github.com/emanuelsmcastro)<br>
+![Badge](/images/Badge-Conversor.png)
