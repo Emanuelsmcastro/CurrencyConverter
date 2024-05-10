@@ -8,12 +8,13 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
 
+import com.currency.converter.config.GlobalConfig;
 import com.currency.converter.dtos.ConversionRatesDTO;
 import com.google.gson.Gson;
 
 public class ExchangerateAPI {
     static final private String baseURL = "https://v6.exchangerate-api.com/v6";
-    static final private String apiKey = "2a4ff45f0a50bf35e2b72049";
+    static final private String apiKey = GlobalConfig.getInstance().getAPIKey();
     static private HashMap<String, ConversionRatesDTO> cache = new HashMap<>();
 
     public static ConversionRatesDTO get(String currencyCode) throws MalformedURLException, IOException, InterruptedException{
